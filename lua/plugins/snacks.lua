@@ -5,6 +5,8 @@ return {
     lazy = false,
 
     opts = {
+      terminal = { enabled = true },
+      lazygit = { enabled = true },
       picker = {
         enabled = true,
         ui_select = false,
@@ -42,6 +44,22 @@ return {
           Snacks.picker.buffers()
         end,
         desc = "Snacks: バッファ検索",
+      },
+      {
+        "<leader>tt",
+        function()
+          Snacks.terminal(nil, {
+            cwd = Snacks.git.get_root(),
+          })
+        end,
+        desc = "Snacks: ターミナル",
+      },
+      {
+        "<leader>gg",
+        function()
+          Snacks.lazygit()
+        end,
+        desc = "Snacks: Lazygit",
       },
       {
         "<leader>sm",
