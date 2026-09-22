@@ -6,15 +6,15 @@ package.path = wezterm.config_dir .. "/?.lua;" .. package.path
 
 -- Shells and font carried over from the previous Windows configuration.
 config.default_prog = {
-  "C:/Users/tatti/scoop/apps/pwsh/current/pwsh.exe", "-NoLogo",
+  "C:/Users/tatti/scoop/apps/git/current/bin/bash.exe", "-l",
 }
 config.launch_menu = {
-  { label = "PowerShell 7", args = config.default_prog },
-  { label = "Windows PowerShell", args = { "powershell.exe", "-NoLogo" } },
+  { label = "Git Bash", args = config.default_prog },
   {
-    label = "Git Bash",
-    args = { "C:/Users/tatti/scoop/apps/git/current/bin/bash.exe", "-l" },
+    label = "PowerShell 7",
+    args = { "C:/Users/tatti/scoop/apps/pwsh/current/pwsh.exe", "-NoLogo" },
   },
+  { label = "Windows PowerShell", args = { "powershell.exe", "-NoLogo" } },
 }
 config.font = wezterm.font("UDEV Gothic NF")
 config.use_fancy_tab_bar = true
