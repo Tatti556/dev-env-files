@@ -9,6 +9,16 @@ return {
         enabled = true,
         ui_select = false,
       },
+      notifier = {enabled = true},
+      indent = {
+        enabled = true,
+        scope = {
+          enabled = true,
+        },
+        animate = {
+          enabled = false,
+        },
+      },
     },
 
     keys = {
@@ -32,6 +42,20 @@ return {
           Snacks.picker.buffers()
         end,
         desc = "Snacks: バッファ検索",
+      },
+      {
+        "<leader>sm",
+        function()
+          Snacks.scratch()
+        end,
+        desc = "Snacks: スクラッチメモ",
+      },
+      {
+       "<leader>sl",
+        function()
+          Snacks.scratch.select()
+       end,
+       desc = "Snacks: スクラッチリスト",
       },
     },
   },
