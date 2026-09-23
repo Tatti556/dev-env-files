@@ -5,6 +5,7 @@ return {
   },
   config = function()
     vim.opt.foldcolumn = "1"
+    vim.opt.fillchars:append({ foldinner = "│" })
     vim.opt.foldlevel = 99
     vim.opt.foldlevelstart = 99
     vim.opt.foldenable = true

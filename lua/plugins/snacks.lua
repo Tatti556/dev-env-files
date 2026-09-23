@@ -13,13 +13,7 @@ return {
       },
       notifier = { enabled = false },
       indent = {
-        enabled = true,
-        scope = {
-          enabled = true,
-        },
-        animate = {
-          enabled = false,
-        },
+        enabled = false,
       },
     },
 
