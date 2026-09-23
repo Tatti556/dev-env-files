@@ -21,7 +21,7 @@ local function mode_theme(accent)
 end
 
 local mode_accents = {
-  n = "#268bd3",
+  n = "#7aa3f7",
   i = "#849900",
   c = "#b28500",
   v = "#d23681",
@@ -93,7 +93,7 @@ end
 
 -- mode と時刻は色面、その他は Solarized Osaka の statusline 背景に揃える
 local mozumasu_solarized_osaka = {
-  normal = mode_theme("#268bd3"),
+  normal = mode_theme("#7aa3f7"),
   insert = mode_theme("#849900"),
   command = mode_theme("#b28500"),
   visual = mode_theme("#d23681"),
