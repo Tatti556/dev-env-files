@@ -4,6 +4,7 @@ vim.opt.relativenumber = true
 vim.opt.mouse = "a"
 vim.opt.termguicolors = true
 vim.opt.signcolumn = "yes"
+vim.opt.cmdheight = 0
 
 vim.opt.expandtab = true
 vim.opt.tabstop = 2

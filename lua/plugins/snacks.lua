@@ -11,7 +11,7 @@ return {
         enabled = true,
         ui_select = false,
       },
-      notifier = {enabled = true},
+      notifier = { enabled = false },
       indent = {
         enabled = true,
         scope = {
