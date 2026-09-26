@@ -15,6 +15,14 @@ config.launch_menu = {
     args = { "C:/Users/tatti/scoop/apps/pwsh/current/pwsh.exe", "-NoLogo" },
   },
   { label = "Windows PowerShell", args = { "powershell.exe", "-NoLogo" } },
+  { 
+    label = "MSYS2 Zsh",
+    args = {
+      "cmd.exe", "/c",
+      "C:\\Users\\tatti\\msys64\\msys2_shell.cmd",
+      "-defterm", "-here", "-no-start", "-ucrt64", "-shell", "zsh",
+  },
+}
 }
 config.font = wezterm.font("UDEV Gothic NF")
 config.use_fancy_tab_bar = true
