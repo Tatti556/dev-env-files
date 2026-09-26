@@ -1,0 +1,9 @@
+*.log
+
+# Neovim swap and backup files
+*.swp
+*.swo
+*~
+
+# Machine-local configuration
+local.lua
