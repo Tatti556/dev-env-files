@@ -38,6 +38,27 @@ eval "$(zoxide init zsh)"
 # fzf連携
 eval "$(fzf --zsh)"
 
+# ==========================================
+# fzf Preview
+# ==========================================
+
+export FZF_CTRL_T_OPTS="
+  --preview '
+    if [ -d {} ]; then
+      eza --tree --level=2 --color=always --icons=always {} | head -100
+    else
+      bat --style=numbers --color=always --line-range :300 {}
+    fi
+  '
+  --preview-window=right:55%:wrap
+"
+
+export FZF_ALT_C_OPTS="
+  --preview 'eza --tree --level=2 --color=always --icons=always {} | head -100'
+  --preview-window=right:55%
+"
+
+# Tab補完候補をメニュー形式で選択
 zstyle ':completion:*' menu select
 
 # zoxide 0.10.0 の MSYS2 向け修正
